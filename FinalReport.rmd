@@ -53,8 +53,19 @@ About 34% of people who do not believe in POSTLIFE believe that the BIGBANG is f
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+Lets talks about odds for a second, of those who believe in POSTLIFE, what are the odds that the BIGBANG is false? For those who said no to believing in POSTLIFE but believe in the BIGBANG, the odds are, 8/15. now suppose that you do believe in POSTLIFE the odds are 88/67. If we had more data we, these results would be more significant to make a determination. The odds ratio .406 : 1. 
+
+```{r}
+(8/15)/(88/67)
+```
 
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+We are forced to say that we fail to reject the null hypothesis because there is not enough data to show. The probibility of getting something like this again is .00% of the time is also the p-value. 
