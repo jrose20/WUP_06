@@ -42,6 +42,13 @@ According to these two charts a lot more people believe in the post life than th
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+```{r}
+table1 <- xtabs(~POSTLIFE + BIGBANG,data=GSS)
+rowPerc(table1)
+colPerc(table1)
+```
+
+About 34% of people who do not believe in POSTLIFE believe that the BIGBANG is false and 65% of people who do not believe in POSTLIFE believe that the BIGBANG is true. Then there is about 56% of people who do believe in POSTLIFE believe that the BIGBANG is false and 43% of people who believe in POSTLIFE believe that the BIGBANG is true. 
 
 ## Inferential Results
 
